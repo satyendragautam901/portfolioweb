@@ -18,6 +18,7 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
+  text-align: justify;
 }
 
 .container {
@@ -95,7 +96,8 @@ section {
     /* font-size: 1rem; */
     width: 80%;
     text-justify: auto;
-  }
+    text-align: justify;
+    }
   .rowUni{
     width: 100%;
     overflow-x: hidden;
