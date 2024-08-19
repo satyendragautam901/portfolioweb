@@ -23,8 +23,8 @@
 
 .container {
   height: 100vh;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  width: 80%;
+  margin: 0 auto;
 
   scroll-behavior: smooth;
 }
@@ -40,9 +40,9 @@ section {
 
 .header {
   display: flex;
-  justify-content: space-between; /* Align items with space between */
-  align-items: center; /* Center items vertically */
-  padding: 10px 20px; /* Adjust padding as needed */
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
   box-shadow: 0 2px 4px rgba(213, 70, 187, 0.1);
   background-color: rgb(9, 32, 58);
   position: fixed;
@@ -69,6 +69,7 @@ section {
 /* menu toggle end */
 
 /* Laptop/Desktop Styles */
+
 @media (min-width: 1024px) {
   .navbar ul {
     display: flex;
@@ -83,10 +84,15 @@ section {
 /* Mobile Styles */
 
 @media (max-width: 767px) {
+  
+  
+  .welcome-message {
+    margin: 0 auto;
+  }
   .imgContainer {
     display: none;
   }
-  .header{
+  .header {
     background-color: rgb(1, 14, 27);
   }
 
@@ -97,23 +103,22 @@ section {
     width: 80%;
     text-justify: auto;
     text-align: justify;
-    }
-  .rowUni{
+  }
+  .rowUni {
     width: 100%;
     overflow-x: hidden;
   }
 
-  .logoUni{
+  .logoUni {
     width: 500px;
   }
- 
-  .Projectmain{
+
+  .Projectmain {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-
   }
-  
+
   .desc {
     /* font-size: 1rem; */
     word-wrap: break-word;
@@ -154,14 +159,12 @@ section {
   .navbar li {
     margin: 1rem 0;
   }
-  .role{
+  .role {
     font-size: 1.8rem;
   }
-  .heading{
-    font-size:  1.5rem;
-
+  .heading {
+    font-size: 1.5rem;
   }
- 
 }
 
 /* end responsive  */
@@ -232,8 +235,8 @@ section {
 }
 
 .userImage:hover {
-  transform: scale(1.1); /* Increase size on hover */
-  filter: grayscale(0%); /* Change to full color on hover */
+  transform: scale(1.1); 
+  filter: grayscale(0%);
   transition: transform 1s ease-in, filter 1s ease-in;
 }
 
@@ -287,8 +290,8 @@ section {
   cursor: pointer;
   margin-top: 2rem;
   position: relative;
-  overflow: hidden; /* Ensures the pseudo-element does not overflow the button */
-  transition: color 0.4s ease; /* Smooth transition for text color */
+  overflow: hidden; 
+  transition: color 0.4s ease; 
 }
 
 /* Pseudo-element for the hover effect */
@@ -301,28 +304,28 @@ section {
   height: 100%;
   /* Hover color */
   background-color: #0056b3;
-  transition: left 1s ease; /* Smooth transition for the gradient */
-  z-index: 1; /* Ensure it stays behind the text */
+  transition: left 1s ease; 
+  z-index: 1;
 }
 
 /* Hover state for the pseudo-element */
 .btn:hover::before {
-  left: 0; /* Move the gradient to cover the button */
+  left: 0; 
 }
 
 /* Button text styles */
 .btn span {
-  position: relative; /* Ensure the text stays above the pseudo-element */
-  z-index: 20; /* Ensure the text is above the pseudo-element */
+  position: relative; 
+  z-index: 20; 
 }
 
 /* Click state effect */
 .btn:active::before {
-  left: 100%; /* Move the gradient out of view */
+  left: 100%;
 }
 
 .btn:active {
-  color: #fff; /* Ensure text color remains consistent */
+  color: #fff; 
 }
 
 /* about section */
@@ -343,7 +346,6 @@ section {
 
 .interestSection {
   text-align: center;
-  
 }
 
 .interest {
@@ -432,8 +434,8 @@ section {
 }
 .rowUni:hover {
   background-color: #053d62;
-  transform: scale(1.06); /* Increase size on hover */
-  filter: grayscale(0%); /* Change to full color on hover */
+  transform: scale(1.06); 
+  filter: grayscale(0%); 
   transition: transform 1s ease-in, filter 1s ease-in;
 }
 
@@ -572,7 +574,7 @@ input {
   margin-top: 20px;
   text-align: center;
   position: absolute;
-  bottom: -60px; /* Initially hidden outside the visible area */
+  bottom: -60px; 
   width: 100%;
   box-sizing: border-box;
   transition: bottom 0.5s ease-in-out;
@@ -643,7 +645,7 @@ input {
 /* Text styling */
 .text {
   text-align: center;
-  font-size: 1.2em; /* Adjust as needed */
+  font-size: 1.2em; 
 }
 
 /* Hover effect */
@@ -677,4 +679,50 @@ input {
 .video-container:hover {
   transform: scale(1.1);
   transition: transform 1s ease-in, filter 1s ease-in;
+}
+
+/*  welcome message */
+
+.welcome-message {
+  position: fixed;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,93,140,1) 100%, rgba(13,96,143,1) 100%, rgba(0,212,255,1) 100%); 
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.3em;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  border-radius: 15px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  
+}
+#super {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  margin:0 auto;
+}
+
+.Welcome {
+  text-align: center;
+  z-index: 9999;
+}
+.enjoy {
+  text-align: center;
+}
+
+.welcome-message.fade-out {
+  opacity: 0;
+}
+.main-content {
+  display: none;
+  /* Initially hide main content until welcome message fades out */
+}
+
+.main-content.show {
+  display: block;
 }

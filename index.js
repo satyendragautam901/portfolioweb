@@ -5,15 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (form) {
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); 
             
             if (thankYouMessage) {
-                thankYouMessage.classList.remove('hidden'); // Show the thank-you message
+                thankYouMessage.classList.remove('hidden'); 
                 
-                // Optionally hide the message after a few seconds
                 setTimeout(() => {
                     thankYouMessage.classList.add('hidden');
-                }, 3000); // Message disappears after 3 seconds
+                }, 3000); 
             }
         });
     }
@@ -26,5 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
         menuToggle.addEventListener('click', function() {
             navbar.classList.toggle('active');
         });
+    }
+    
+    // Welcome message
+
+    const welcomeMessage = document.getElementById('welcome-message');
+    const mainContent = document.getElementById('main-content');
+    
+    if (welcomeMessage && mainContent) {
+        setTimeout(() => {
+            welcomeMessage.classList.add('fade-out');
+            // After fade-out transition ends, show the main content
+            setTimeout(() => {
+                welcomeMessage.remove(); 
+                mainContent.classList.remove('hidden'); 
+                mainContent.classList.add('show');
+            }, 1000);
+        }, 2000); 
     }
 });
