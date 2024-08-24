@@ -40,9 +40,9 @@ section {
 
 .header {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 10px 20px; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(213, 70, 187, 0.1);
   background-color: rgb(9, 32, 58);
   position: fixed;
@@ -84,8 +84,6 @@ section {
 /* Mobile Styles */
 
 @media (max-width: 767px) {
-  
-  
   .welcome-message {
     margin: 0 auto;
   }
@@ -235,7 +233,7 @@ section {
 }
 
 .userImage:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   filter: grayscale(0%);
   transition: transform 1s ease-in, filter 1s ease-in;
 }
@@ -290,8 +288,8 @@ section {
   cursor: pointer;
   margin-top: 2rem;
   position: relative;
-  overflow: hidden; 
-  transition: color 0.4s ease; 
+  overflow: hidden;
+  transition: color 0.4s ease;
 }
 
 /* Pseudo-element for the hover effect */
@@ -304,19 +302,19 @@ section {
   height: 100%;
   /* Hover color */
   background-color: #0056b3;
-  transition: left 1s ease; 
+  transition: left 1s ease;
   z-index: 1;
 }
 
 /* Hover state for the pseudo-element */
 .btn:hover::before {
-  left: 0; 
+  left: 0;
 }
 
 /* Button text styles */
 .btn span {
-  position: relative; 
-  z-index: 20; 
+  position: relative;
+  z-index: 20;
 }
 
 /* Click state effect */
@@ -325,7 +323,7 @@ section {
 }
 
 .btn:active {
-  color: #fff; 
+  color: #fff;
 }
 
 /* about section */
@@ -434,8 +432,8 @@ section {
 }
 .rowUni:hover {
   background-color: #053d62;
-  transform: scale(1.06); 
-  filter: grayscale(0%); 
+  transform: scale(1.06);
+  filter: grayscale(0%);
   transition: transform 1s ease-in, filter 1s ease-in;
 }
 
@@ -574,7 +572,7 @@ input {
   margin-top: 20px;
   text-align: center;
   position: absolute;
-  bottom: -60px; 
+  bottom: -60px;
   width: 100%;
   box-sizing: border-box;
   transition: bottom 0.5s ease-in-out;
@@ -645,7 +643,7 @@ input {
 /* Text styling */
 .text {
   text-align: center;
-  font-size: 1.2em; 
+  font-size: 1.2em;
 }
 
 /* Hover effect */
@@ -684,11 +682,17 @@ input {
 /*  welcome message */
 
 .welcome-message {
-  position: fixed;
+  position: relative;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,93,140,1) 100%, rgba(13,96,143,1) 100%, rgba(0,212,255,1) 100%); 
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(13, 93, 140, 1) 100%,
+    rgba(13, 96, 143, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3), 0 6px 20px rgba(0, 212, 255, 0.2) ;
   color: #fff;
-  padding: 15px;
   text-align: center;
   font-size: 1.3em;
   z-index: 1000;
@@ -697,14 +701,18 @@ input {
   border-radius: 15px;
   text-align: justify;
   font-family: "Roboto", sans-serif;
-  
+
+  width: 80%;
+  padding: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
 }
 #super {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8vw;
-  margin:0 auto;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .Welcome {
@@ -713,6 +721,7 @@ input {
 }
 .enjoy {
   text-align: center;
+  font-style: italic;
 }
 
 .welcome-message.fade-out {
