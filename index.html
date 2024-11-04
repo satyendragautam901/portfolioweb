@@ -13,9 +13,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
 
 </head>
 
@@ -30,7 +30,7 @@
             <div id="welcome-message" class="welcome-message">
                 <h1 class="Welcome"><strong>Welcome to My Portfolio!</strong> 👋</h1>
                 <p>Thank you for stopping by. I’m thrilled to showcase my creative projects. Explore my work and feel
-                    free to reach out if you have any questions or ideas 💡.</p>  <br>
+                    free to reach out if you have any questions or ideas 💡.</p> <br>
                 <p class="enjoy">Enjoy your visit and have a great day! 😊 </p>
             </div>
         </div>
@@ -38,20 +38,26 @@
         <div id="main-content" class="main-content">
             <!-- Header -->
             <header class="header">
-                <h1 class=" sattu">Satyendra Gautam</h1>
+                <!-- <h1 class=" sattu">Satyendra Gautam</h1> -->
+
                 <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
                 <nav class="navbar">
                     <ul class="ram">
-                        <li class="active"><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Cx4qcPyt9Vg6rP9GH1cySTEtqiNZjciE/view?usp=sharing"
-                                target="_blank"> Resume</a></li>
-                        <li><a href="#Contact"> Contact</a></li>
+                        <li><a href="#header"><i class="fas fa-home"></i><span class="text">Home</span></a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i><span class="text">About</span></a></li>
+                        <li><a href="#education"><i class="fas fa-graduation-cap"></i><span
+                                    class="text">Education</span></a></li>
+                        <li><a href="#experience"><i class="fas fa-briefcase"></i><span
+                                    class="text">Experience</span></a></li>
+                        <li><a href="https://drive.google.com/file/d/1NsbVFV316P9KuKMlCG1IxaJPFkB9JlTg/view?usp=sharing"
+                                target="_blank"><i class="fas fa-file-alt"></i><span class="text">Resume</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i><span class="text">Contact</span></a></li>
                     </ul>
                 </nav>
+
+
+
             </header>
 
             <div class="container">
@@ -62,7 +68,7 @@
                     <!-- left part of hero section -->
                     <div class="infoContainer">
                         <div class="satyG">
-                            <div class="heading">Hi ! Satyendra Gautam</div>
+                            <div class="heading"> <span>Hi, I'm</span> <br> <span>Satyendra Gautam</span> </div>
                             <div class="subHeading">
                                 I am a <span class="role" style="color:#12D640;"></span>
 
@@ -73,12 +79,18 @@
                             I invite you to explore my journey and experience in the World of Coding and Development.
                         </p>
                         <div class="socialLink">
-                            <a href="https://www.linkedin.com/in/satyendra-gautam-525220244/" target="_blank"> <i
-                                    class="fa-brands fa-linkedin" style="color: #2196e0;"> </i></a>
-                            <a href="https://github.com/satyendragautam901" target="_blank"> <i
-                                    class="fa-brands fa-github" style="color: #2196e0;"></i></a>
-                            <a href="https://x.com/SatyendraG20577" target="_blank"> <i
-                                    class="fa-brands fa-square-twitter" style="color: #2196e0;"></i></a>
+                            <a href="https://www.linkedin.com/in/satyendra-gautam-525220244/" target="_blank">
+                                <img src="Images/linkedin.png" alt="linkedin icon">
+                            </a>
+                            <a href="https://github.com/satyendragautam901" target="_blank">
+                                <img src="Images/Github.svg" alt="github icon"
+                                    style="object-fit: cover; border-radius: 25px; width: 40px; height: 40px; filter: brightness(0) invert(1); ">
+                            </a>
+
+                            <a href="https://www.instagram.com/satyendragautam01/?next=%2F&hl=en" target="_blank">
+                                <img src="Images/insta.jpg" alt="insta icon"
+                                    style="border-radius: 25px; object-fit: cover;">
+                            </a>
                         </div>
                         <div class="btn"> <span>Hire Me</span> </div>
                     </div>
@@ -100,77 +112,68 @@
                             <h2> About</h2>
                         </div>
 
-                        <p style="margin: 1rem;">I am a Computer Science Grad Student at University of Allahabad. I
-                            enjoy
-                            problem-solving and coding. Always strive to bring 100% to the work I do.
-                            I have worked on technologies like HTML, CSS, C++ and Basic Python during my bachelor's.
-                            I am passionate about developing software that solve real-world problems impacting millions
-                            of
-                            users.</p>
+                        <!-- main div for image and text to use flex-->
 
-                        <p>
-                        <ul style="margin: 1rem;">
-                            <li><b>Languages:</b> C, C++, Basic Python, HTML/CSS and JavaScript, </li>
-                            <!-- <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li> -->
-                            <!-- <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li> -->
-                            <li><b>Frameworks:</b> Tailwind and Basic React </li>
-                            <li><b>Tools & Technologies:</b> Git</li>
-                        </ul>
+                        <div class="aboutMain">
 
-                        </p>
+                            <!-- image -->
 
-                        <p style="color: rgb(231, 219, 204); margin: 1rem;">
-                            <i class="fa-solid fa-rocket" style=" color: #12D640;"></i>
-                            Looking for an opportunity to work in a challenging position combining my skills in Software
-                            Engineering, which provides professional development, interesting experiences and personal
-                            growth.
-                        </p>
-
-                    </div>
-
-                    <!-- Interests Section -->
-                    <div class="interestsContainer">
-                        <div class="section-title">
-                            <h2>Interests</h2>
-                        </div>
-                        <div class="interestsSection">
-                            <div class="interestsContainerr" style="margin: 1rem;">
-                                <!-- Interest with icon -->
-                                <div class="interest">
-                                    <!-- Font Awesome icon for coding -->
-                                    <!-- <i class="fas fa-cogs"></i> -->
-                                    <img src="Images/developer.png" alt=""
-                                        style="height: 20px; width: 20px; color:white;">
-                                    Software Development
-                                </div>
-                                <div class="interest">
-                                    <i class="fas fa-cogs"></i> <!-- Font Awesome icon for engineering -->
-                                    Software Engineering
-                                </div>
-                                <div class="interest">
-                                    <i class="fa-sharp fa-solid fa-code" style="color: #B197FC;"></i>
-                                    <!-- Font Awesome icon for coding -->
-                                    Coding
-                                </div>
-                                <div class="interest">
-                                    <i class="fas fa-camera" style="color: cadetblue;"></i>
-                                    <!-- Font Awesome icon for photography -->
-                                    Photography
-                                </div>
-                                <div class="interest">
-                                    <i class="fas fa-music" style="color: rgb(146, 12, 12);"></i>
-                                    <!-- Font Awesome icon for music -->
-                                    Music
-                                </div>
-                                <div class="interest">
-                                    <i class="fas fa-tree" style="color: #12D640;"></i>
-                                    <!-- Font Awesome icon for planting trees -->
-                                    Planting Trees
-                                </div>
+                            <div class="Aboutimg">
+                                <img src="Images/person.png" alt="aboutImage" class="aboutImage">
                             </div>
+
+
+                            <!-- about me text -->
+
+                            <div class="aboutText">
+
+                                <p>
+                                    Focused and enthusiastic web developer with a passion for creating user-friendly and
+                                    efficient applications. I thrive on understanding the intricacies of web
+                                    technologies and apply them effectively in various projects. My experience includes
+                                    working with HTML, CSS, JavaScript, and frameworks like React. I’m dedicated to
+                                    building responsive and engaging websites that solve real-world problems and enhance
+                                    user experiences.
+                                </p>
+
+                                <div class="whatIenjoy">
+
+                                    <h4>What I Enjoy Doing</h4>
+
+                                    <ul class="activity-list">
+                                        <li class="activity-item">Building personal projects</li>
+                                        <li class="activity-item">Learning new web technologies</li>
+                                        <li class="activity-item">Creating responsive designs</li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="quote-container">
+                                    <blockquote class="quote">
+                                        "In the realm of technology, curiosity is the key that unlocks endless
+                                        possibilities."
+                                    </blockquote>
+                                    <cite class="author">— Satyendra Gautam</cite>
+                                </div>
+
+
+
+                            </div>
+
                         </div>
+
+
+                        <p class="looking-opportunity">
+                            <i class="fa-solid fa-rocket" style="color: #12D640; margin-right: .5rem;"></i>
+                            I am eager to find an opportunity that challenges me and allows me to apply my skills in
+                            Software Engineering.
+                            I seek a role that fosters professional development, offers engaging experiences, and
+                            promotes personal growth.
+                        </p>
+
+
                     </div>
-                    <!-- End Interests Section -->
+
 
 
                 </section>
@@ -182,28 +185,109 @@
                     <div class="section-title">
                         <h2>Education</h2>
                     </div>
-                    <div class="rowUni">
 
-                        <div class="logoUni">
-                            <img src="Images/Allahabad_University_logo.png" class="img-fluid"
-                                alt="Allahabad University Logo">
-                            <h2>University Of Allahabad</h2>
+                    <!-- education main  -->
+
+                    <div class="educationMain">
+
+                        <!-- University -->
+
+                        <div class="rowUni">
+
+                            <div class="uniHover">
+
+                                <div class="logoUni">
+                                    <img src="Images/Allahabad_University_logo.png" class="img-fluid"
+                                        alt="Allahabad University Logo">
+                                    <h2>University Of Allahabad</h2>
+                                </div>
+                                <div class="belowLogo">
+                                    <p><em>B. Tech in Computer Science</em></p>
+                                    <h4>November 2020 - July 2024</h4>
+                                    <h6></h6>Relevant Coursework</h6>
+                                    <ul>
+                                        <li>Operating System</li>
+                                        <li>Database Management Systems</li>
+                                        <li>OOPs</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
                         </div>
-                        <div class="belowLogo">
-                            <p><em>B. Tech in Computer Science</em></p>
-                            <h4>November 2020 - July 2024</h4>
-                            <h6></h6>Relevant Coursework</h6>
-                            <ul>
-                                <li>Operating System</li>
-                                <li>Database Management Systems</li>
-                                <li>Data Structure & Algorithms</li>
-                            </ul>
+
+                        <!-- online certification -->
+
+                        <div>
+                            <div class="online-title">
+
+                                <h3>Online Certification</h3>
+                            </div>
+
+                            <div class="onlineCerti">
+                                <!-- Link for Database Certification -->
+                                <div class="certification-item">
+                                    <a href="https://drive.google.com/file/d/17kAE-_sUwFVaf0CxidCyoXcIq3Mlzt5i/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="Images/greatLearning.png" alt="Database Certification"
+                                            class="db-certification">
+                                        <span class="hover-text">
+                                            Introduction to Database and SQL</span>
+                                    </a>
+                                </div>
+
+                                <!-- Link for Web Certification -->
+                                <div class="certification-item">
+                                    <a href="https://www.freecodecamp.org/certification/satyendragautam507/responsive-web-design"
+                                        target="_blank">
+                                        <img src="images/freecodecamp.svg" alt="Web Certification"
+                                            class="web-certification">
+                                        <span class="hover-text">Responsive Web Design</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
                         </div>
+
+
                     </div>
+
+
+
 
                 </section>
 
                 <!-- End Education Section -->
+
+                <!-- experience section -->
+
+                <section id="experience" class="experience">
+                    <div class="section-title">
+                        <h2>Experience</h2>
+                    </div>
+
+                    <div class="experienceMain">
+
+                        <div class="job">
+                            <h2>Vowel</h2>
+                            <h3>Frontend Developer Intern</h3>
+                            <p>August 2024 - Present</p>
+                            <ul>
+                                <li>Collaborate with design teams to create responsive web applications that enhance
+                                    user experience.</li>
+                                <li>Implement frontend features using modern frameworks such as React.</li>
+                                <li>Optimize web applications for maximum speed and scalability.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- experience section End -->
 
                 <!-- Start Skills Section -->
                 <section id="skills" class="skills">
@@ -211,20 +295,127 @@
                         <h2> Skills</h2>
                     </div>
 
-                    <div class="rotating-container">
-                        <div class="rotating-group">
-                            <img src="Images/c++-logo.png" alt="">
-                            <img src="Images/C.png" alt="C Logo">
-                            <img src="Images/java-script.png" alt="JavaScript Logo">
-                            <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python Logo">
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5 Logo">
+                    <!-- <div class="skillContainer">
+                        <div class="skillGroup">
+                            <img src="Images/c++-logo.png" alt="C++ Logo" class="cplusplus">
+                            <img src="Images/C.png" alt="C Logo" class="c">
+                            <img src="Images/java-script.png" alt="JavaScript Logo" class="javascript">
+                            <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python Logo"
+                                class="python">
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5 Logo"
+                                class="html">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                                alt="CSS3 Logo">
-                            <!-- <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL Logo"> -->
-                            <img src="Images/tailwind-css.svg" alt="Tailwind CSS Logo">
-                            <img src="Images/React.png" alt="React Logo">
-                            <img src="Images/Github.svg" alt="GitHub Logo">
-                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git Logo">
+                                alt="CSS3 Logo" class="css">
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL Logo"
+                                class="mysql">
+                            <img src="Images/tailwind-css.svg" alt="Tailwind CSS Logo" class="tailwind">
+                            <img src="Images/React.png" alt="React Logo" class="react">
+                            <img src="Images/Github.svg" alt="GitHub Logo" class="github">
+                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git Logo"
+                                class="git">
+                        </div>
+                    </div> -->
+
+
+                    <div class="skills-section">
+                        <h2><em>Embark on a journey through my skill set—where innovation meets expertise!</em></h2>
+                        <div class="skill">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="90">
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="90">
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skill">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="85">
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="skill">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="85">
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="80">
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="80">
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skill">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="75">
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="skill">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="75">
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="70">
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="70">
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="65">
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -233,51 +424,96 @@
 
                 <!-- start Projects section  -->
 
-                <section id="project" class="projects">
+                <section id="project" class="">
                     <div class="section-title">
                         <h2>Projects</h2>
                     </div>
 
                     <div class="Projectmain">
-                        <!-- project no1 -->
-                        <div class="project1">
-                            <div class="projectheading">
-                                <h4><strong>Fake Image Detection </strong></h4>
-                            </div>
+                        <!-- Project Navigation -->
+                        <!-- Projects Navigation Buttons -->
+                        <span id="prev" class="circle-button">&lt;</span>
+                        <span id="next" class="circle-button">&gt;</span>
 
-                            <div class="image-container">
+                        <!-- Projects -->
+                        <div class="projects">
 
-                                <img src="Images/fakeimage.png" alt="" class="fakeImage">
-                                <div class="overlay">
-                                    <div class="text">Helps to detect manipulated and real Images</div>
+                            <!-- Project No 1 -->
+                            <div class="project project1" style="display: none;">
+                                <div class="projectheading">
+                                    <h4><strong>Weather Web App</strong></h4>
                                 </div>
-
-                            </div>
-
-                        </div>
-                        <!-- project no2 -->
-
-                        <div class="project2">
-                            <div class="projectheading">
-                                <h4><strong> My Portfolio </strong></h4>
-                            </div>
-
-                            <div class="video-container">
-
-                                <video autoplay loop muted>
-                                    <source src="Images/Portflio.mp4" type="video/mp4">
-
-                                </video>
-                                <div class="overlay">
-                                    <div class="text">Helps to detect manipulated and real Images</div>
+                                <div class="image-container">
+                                    <img src="Images/weather.png" alt="Weather Web App" class="project-image">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, API</p>
+                                            <p>Provides real-time weather updates with a user-friendly interface.</p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            
 
+                            <!-- Project No 2 -->
+                            
+
+                            <div class="project project2" style="display: none;">
+                                <div class="projectheading">
+                                    <h4><strong>My Portfolio</strong></h4>
+                                </div>
+                                <div class="image-container">
+                                    <img src="Images/Portflio.png" alt="My portfolio" class="project-image"
+                                        id="my_portfolio">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                                            <p>A responsive portfolio showcasing my projects and skills, designed to highlight my journey as a developer.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
                             </div>
 
+
+                            <!-- Project No 3 -->
+                            <div class="project project3" style="display: none;">
+                                <div class="projectheading">
+                                    <h4><strong>Password Generator</strong></h4>
+                                </div>
+                                <div class="image-container">
+                                    <img src="Images/password.png" alt="Password Generator" class="project-image">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                                            <p>Helps generate strong, random passwords to enhance security and protect user accounts from unauthorized access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <!-- Project No 4 -->
+                            <div class="project project4">
+                                <div class="projectheading">
+                                    <h4><strong>Fake Image Detection</strong></h4>
+                                </div>
+                                <div class="image-container">
+                                    <img src="Images/fakeimage2.png" alt="Fake Image Detection" class="project-image">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p><strong>Tech Stack:</strong> Python, OpenCV, TensorFlow</p>
+                                            <p>Utilizes advanced algorithms to analyze images and determine their authenticity, helping users identify manipulated content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
-
-
                     </div>
+
+
+
 
 
                 </section>
@@ -288,43 +524,62 @@
 
                 <!-- start contacts section  -->
 
-                <section id="Contact" class="Contact">
+                <section id="contact" class="Contact">
                     <div class="section-title">
                         <h2>Contact</h2>
                     </div>
-                    <div class="contactsMain">
+
+                    <div class="main-container">
+
                         <div class="form-container">
-                            <!-- <h2 class="contact">Contact Us</h2> -->
+                            <h2>I’d Love to Hear from You!</h2>
                             <form id="contact-form">
                                 <div class="form-group">
-                                    <label for="name">Name:</label>
-                                    <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+                                    <input type="text" placeholder="First Name *" required>
+                                    <input type="text" placeholder="Last Name *" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required required
-                                        placeholder="Enter Your Email">
+                                    <input type="email" placeholder="Email *" required>
+                                    <input type="text" placeholder="Subject">
                                 </div>
                                 <div class="form-group">
-                                    <label for="phone">Phone:</label>
-                                    <input type="tel" id="phone" name="phone" required required
-                                        placeholder="Enter Your Phone No">
+                                    <textarea placeholder="Write your message... *" required></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject:</label>
-                                    <input type="text" id="subject" name="subject" required required
-                                        placeholder="Enter Your Subject">
-                                </div>
-                                <button class="submitbtn" type="submit">Submit</button>
+                                <button type="submit" class="submit-btn">Send Message</button>
                             </form>
-                            <div id="thank-you-message" class="hidden">Thank you for contacting me!</div>
+
+                            <div class="thankyou">
+                                <div id="thank-you-message" class="hidden">Thank you for contacting me!</div>
+
+                            </div>
+                            <div class="contact-info">
+                                <p>Or reach out directly through:</p>
+                                <ul class="contactInfoIcon">
+                                    <li><a href="mailto:satyendragautam507@gmail.com"><img src="Images/gmail.png"
+                                                alt=""></a></li>
+                                    <li><a href="https://www.facebook.com/satyendragautam.satyendragautam.56" target="_blank"><img
+                                                src="Images/facebook.png" alt=""></a></li>
+                                    <li><a href="https://x.com/SatyendraG20577" target="_blank"><img
+                                                src="Images/twitter.png" alt=""></a></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
 
+
+
                 </section>
 
                 <!-- End  contacts Section -->
+
+
+                <!-- footer-->
+
+                <footer>
+                    <p>© 2024 Satyendra Gautam. All rights reserved.</p>
+                </footer>
+
 
 
             </div>
